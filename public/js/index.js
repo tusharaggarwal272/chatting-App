@@ -6,9 +6,9 @@ let socket=io();
                 text:"I am learning socket and implementing socket.emit"
             })
         });
-        socket.on('disconnect',function(){
-            console.log("disconnected");
-        });
+        // socket.on('disconnect',function(){
+        //     console.log("disconnected");
+        // });
         socket.on('newMessage',function(message){
             console.log("message",message);
         });
